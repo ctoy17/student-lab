@@ -1,38 +1,25 @@
 .App {
   text-align: center;
+  background-color: #fffffe;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App>header {
+  background-color: #f25f4c;
+  border-bottom: 2px solid #0f0e17;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fffffe;
+  font-family: 'Nothing You Could Do', cursive;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #0f0e17;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App>div{
+  background-color: #ff8906;
+  margin: 50px;
+  padding: 10px;
 }

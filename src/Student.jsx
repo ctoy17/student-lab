@@ -1,19 +1,21 @@
 import React from "react";
+import './Student.css';
+
 
 
 
 function Student(props){
     return(
-        <div>
-            <h1>{props.student.name}</h1>
-            <p>{props.student.bio}</p>
-            <ul>
+        <div className="Student">
+            <h1 className="StudentName">{props.student.name}</h1>
+            <p className="StudentBio">{props.student.bio}</p>
+            <div>
             {props.student.scores.map((score, index) => (
-                <div key={index}>
-                    <ul> Date: {score.date} Score: {score.score} </ul>
+                <div className="StudentScore" key={index}>
+                    <div className="ScoreDate"> <b>Date:</b> {score.date} </div><div className="ScoreAmount"> <b>Score:</b> {score.score} </div>
                 </div>
             ))}
-            </ul>
+            </div>
         </div>
     );
 }

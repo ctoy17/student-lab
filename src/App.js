@@ -66,6 +66,9 @@ function App() {
   const [students, setStudents] = useState(studentInfo)
   return (
     <div className="App">
+      <header>
+        <h1>Students</h1>
+      </header>
       {students.map((student, index) => (
         <Student key={index} student={student} />
       ))}

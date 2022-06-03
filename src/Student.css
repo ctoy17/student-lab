@@ -1,0 +1,20 @@
+.Student{
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 3vmin;
+    border: .5vmin solid #0f0e17;
+    border-radius: 5px;
+    box-shadow:  2px 3px  #0f0e17;
+}
+.StudentName{
+    text-transform: uppercase;
+    border-bottom: .5vmin solid #0f0e17;
+    padding-bottom: 5px;
+}
+.StudentBio{
+    text-align: left;
+}
+.StudentScore{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
