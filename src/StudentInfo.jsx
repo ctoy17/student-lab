@@ -1,9 +1,4 @@
-import './App.css';
-import {useState} from "react";
-import Student from "./Student";
-
-function App() {
-  const studentInfo = [
+const StudentInfo=[
     {
         name: 'Cait Yomorta',
         bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus placeat nostrum explicabo? Voluptatibus expedita saepe officia optio, commodi totam ratione laudantium ipsum porro molestias, quasi nulla minus vitae laboriosam corrupti Delectus inventore explicabo est odit incidunt rem a recusandae eum pariatur. Aperiam doloremque blanditiis harum voluptate animi fugit beatae asperiores quo, dignissimos sed illum veniam eum accusantium nulla quod voluptatum',
@@ -62,15 +57,6 @@ function App() {
         }
         ]
     }
-  ]
-  const [students, setStudents] = useState(studentInfo)
-  return (
-    <div className="App">
-      {students.map((student, index) => (
-        <Student key={index} student={student} />
-      ))}
-    </div>
-  );
-}
+]
 
-export default App;
+export default StudentInfo;
